@@ -1,4 +1,4 @@
-int choice()
+void choice()
 {
 int ch,l;
 char name[500];
