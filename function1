@@ -1,0 +1,20 @@
+int choice()
+{
+int ch,l;
+char name[500];
+cout<<"welcome \n 1.To find book /n 2.to buy book /n 3.TO rent book 4. to check the all the books/n enter your choice";
+cin>>ch;
+switch(ch)
+{
+case 1:
+  {
+  cout<<"enter the name of book you want to serch";
+  gets(name);
+  l=database(name);  
+  if(l==1)
+  cout<<"book is in the database";
+  else if(l==2)
+  cout<<"book is out of stock";
+  else
+  cout<<"book not found";
+  
