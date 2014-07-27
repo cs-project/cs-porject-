@@ -1,7 +1,7 @@
 int search(char a[])
 {
   int f,i;
-  for(i=1;i<100;i++)
+  for(i=1;i=<10;i++)
     {
       st[]=game();
       if(!strcmp(a,st))
