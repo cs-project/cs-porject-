@@ -2,18 +2,19 @@ void choice()
 {
 int ch,l;
 char name[500],na[50];
-cout<<"welcome \n 1.To find game /n 2.to buy game /n 3.To rent game 4. to check the all the games/n enter your choice\n";
+cout<<"Welcom to the App Store";
+cout<<"welcome \n 1.To find app /n 2.to download app  /n 3.To check compatibilty 4. to check the all the app/n enter your choice\n";
 cin>>ch;
 switch(ch)
 {
 case 1:
   {
-  cout<<"enter the name of game you want to serch\n";
+  cout<<"enter the name of app you want to serch\n";
   gets(name);
   l=search(name);  
   if(l==1)
   cout<<"game is in the database";
-  cout<<"would you like to buy the game\t enter 1 for yes\n 2 for no\n";
+  cout<<"would you like to buy the app\t enter 1 for yes\n 2 for no\n";
   cin>>b;
   if(b===1)
   showdetails();
@@ -26,13 +27,13 @@ case 1:
   cout<<"thank you press any key to exit\n";
   exit();
   else if(l==2)
-  cout<<"game is out of stock\n";
+  cout<<"app is out of stock\n";
   else
-  cout<<"game not found\n";
+  cout<<"app not found\n";
   }
 case 2:
   {
-  cout<<"enter the name of the game\n";
+  cout<<"enter the name of the app\n";
   gets(na);
   l=search(name);
   if(l==1)
@@ -47,13 +48,13 @@ case 2:
   cout<<"thank you press any key to exit\n";
   exit();
   else if(l==2)
-  cout<<"game is out of stock\n";
+  cout<<"app is out of stock\n";
   else
-  cout<<"game not found\n";
+  cout<<"app not found\n";
   }
 case 3:
 {
-cout<<"enter the name of the game\n";
+cout<<"enter the name of the app\n";
   gets(na);
   l=search(name);
   if(l==1)
@@ -68,12 +69,13 @@ cout<<"enter the name of the game\n";
   cout<<"thank you press any key to exit\n";
   exit();
   else if(l==2)
-  cout<<"game is out of stock\n";
+  cout<<"app is out of stock\n";
   else
-  cout<<"game not found\n";
+  cout<<"app not found\n";
 }
 case 4:
 {
-  cout<<"here are is the list of all the game\n";
-  allgame();
+  cout<<"here are is the list of all the app\n";
+  allapps();
+  b
 }
